@@ -1,0 +1,3 @@
+rootProject.name = 'casino-parent'
+include ':app', ':model'
+
