@@ -51,5 +51,5 @@ class CardTests {
 
 private fun parseCardList(text: String): List<Card> {
     val parts = text.split(" ")
-
+    return emptyList()
 }

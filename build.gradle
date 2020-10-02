@@ -2,11 +2,10 @@ group 'com.bendb.casino'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.1.0-beta-38'
+    ext.kotlin_version = '1.4.10'
 
     repositories {
         mavenCentral()
-        maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.1' }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -17,12 +16,11 @@ subprojects {
     group 'com.bendb.casino'
     version '1.0-SNAPSHOT'
 
-    ext.kotlin_version = '1.1.0-beta-38'
+    ext.kotlin_version = '1.4.10'
 
     ext.libs = [
             kotlin: [
                     "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
-                    "org.jetbrains.kotlin:kotlin-runtime:$kotlin_version",
                     "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
             ],
 
@@ -34,7 +32,6 @@ subprojects {
 
     repositories {
         mavenCentral()
-        maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.1' }
     }
 
     apply plugin: 'kotlin'
